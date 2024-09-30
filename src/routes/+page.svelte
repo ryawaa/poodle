@@ -14,7 +14,7 @@
 	import MaterialSymbolsDownload from '~icons/material-symbols/download';
 	import MdiDotsHorizontalCircleOutline from '~icons/mdi/dots-horizontal-circle-outline';
 
-	import { invoke } from '@tauri-apps/api';
+	import { invoke } from '@tauri-apps/api/core';
 	import type { Download } from '../stores.ts';
 	import {
 		Status,

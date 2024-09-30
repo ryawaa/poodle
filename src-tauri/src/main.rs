@@ -1,22 +1,19 @@
 // Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
-use tauri::{CustomMenuItem, Menu, MenuItem, Submenu, WindowBuilder, WindowUrl};
+use tauri::{WebviewWindowBuilder, WebviewUrl};
+use tauri::menu::{MenuItemBuilder, MenuBuilder,  SubmenuBuilder, Submenu};
 
 fn main() {
-    let quit = CustomMenuItem::new("quit".to_string(), "Quit".to_string());
-    let about = CustomMenuItem::new("about".to_string(), "About Poodle".to_string());
-    let submenu = Submenu::new("File", Menu::new().add_item(quit).add_item(about));
-    let menu = Menu::new().add_submenu(submenu);
 
     tauri::Builder::default()
         .setup(|app| {
-            WindowBuilder::new(
+            WebviewWindowBuilder::new(
                 app,
                 "poodle".to_string(),
-                tauri::WindowUrl::App("index.html".into()),
+                WebviewUrl::App("index.html".into()),
             )
-            .menu(menu)
             .title("Poodle")
+            .inner_size(800f64, 600f64)
             .build()?;
             Ok(())
         })
@@ -31,35 +28,37 @@ fn main() {
 
 #[tauri::command]
 fn open_new_window(app: tauri::AppHandle) {
-    WindowBuilder::new(
+    WebviewWindowBuilder::new(
         &app,
         "new",                            
-        WindowUrl::App("/create".into()), 
+        WebviewUrl::App("/create".into()), 
     )
     .title("New")
+    .inner_size(800f64, 600f64)
     .build()
     .unwrap();
 }
 
 #[tauri::command]
 fn open_about_window(app: tauri::AppHandle) {
-    WindowBuilder::new(
+    WebviewWindowBuilder::new(
         &app,
         "about",                         
-        WindowUrl::App("/about".into()), 
+        WebviewUrl::App("/about".into()), 
     )
     .title("About")
+    .inner_size(800f64, 600f64)
     .build()
     .unwrap();
 }
 
 #[tauri::command]
 fn open_config_window(app: tauri::AppHandle) {
-    WindowBuilder::new(
+    WebviewWindowBuilder::new(
         &app,
         "config",                         
-        WindowUrl::App("/config".into()), 
-    )
+        WebviewUrl::App("/config".into()), 
+    ).inner_size(640f64, 480f64)
     .title("Settings")
     .build()
     .unwrap();

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { invoke } from '@tauri-apps/api';
+	import { invoke } from '@tauri-apps/api/core';
 	import MaterialSymbolsDeleteRounded from '~icons/material-symbols/delete-rounded';
 	import MaterialSymbolsAddCircle from '~icons/material-symbols/add-circle';
 	import MdiPause from '~icons/mdi/pause';
