@@ -10,7 +10,7 @@
 	import MaterialSymbolsSearch from '~icons/material-symbols/search';
     import GgDebug from '~icons/gg/debug'
 
-	import { Status, downloads, currentSearchQuery } from '../../stores.ts';
+	import { Status, downloads, currentSearchQuery } from '../../stores';
 	import type { Download } from '../../stores';
 
 	async function openWindow() {

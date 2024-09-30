@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { selectedDownloads, downloads } from '../../stores.ts';
+    import { selectedDownloads, downloads } from '../../stores';
     import { derived } from 'svelte/store';
 
     export let currentlyShown = 0;

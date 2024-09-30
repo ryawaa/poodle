@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Download } from '../../stores.ts';
-	import { Status, selectedDownloads } from '../../stores.ts';
+	import { Status, selectedDownloads } from '../../stores';
 
 	
 	import MaterialSymbolsDownload from '~icons/material-symbols/download';

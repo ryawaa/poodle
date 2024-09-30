@@ -23,7 +23,7 @@
 		currentCategoryFilter,
 		currentSearchQuery,
 		downloads
-	} from '../stores.ts';
+	} from '../stores';
 
 	async function openWindow() {
 		await invoke('open_new_window');
