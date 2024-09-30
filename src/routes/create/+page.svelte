@@ -16,7 +16,7 @@
 	import MaterialSymbolsArrowDropDown from '~icons/material-symbols/arrow-drop-down';
 	
 	let selectedQuality = 'low';
-	let addToTop = false; // This will hold the state of the checkbox
+	let addToTop = false; 
 
 	
 	const qualities = [
@@ -183,3 +183,4 @@
 		</div>
 	</div>
 </div>
+

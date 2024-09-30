@@ -58,7 +58,7 @@ fn open_config_window(app: tauri::AppHandle) {
         &app,
         "config",                         
         WebviewUrl::App("/config".into()), 
-    ).inner_size(640f64, 480f64)
+    ).inner_size(800f64, 600f64)
     .title("Settings")
     .build()
     .unwrap();
