@@ -30,6 +30,9 @@ importers:
       '@tauri-apps/cli':
         specifier: 2.0.0-rc.17
         version: 2.0.0-rc.17
+      '@tauri-apps/plugin-fs':
+        specifier: 2.0.0-rc.2
+        version: 2.0.0-rc.2
       '@types/eslint':
         specifier: ^9.6.0
         version: 9.6.1
@@ -506,6 +509,9 @@ packages:
     resolution: {integrity: sha512-7YQljT+izYmhLqsI5G2xg3AHBPx3gAHc+gB/s+NKqdSL4CuGImLiii8Rw/qBtuJpWFWLJiaGXnpra35zrSlknQ==}
     engines: {node: '>= 10'}
     hasBin: true
+
+  '@tauri-apps/plugin-fs@2.0.0-rc.2':
+    resolution: {integrity: sha512-TFjCfso3tN4b5s2EBjqP8N2gYrPh93Ds3VNKj8pCXv4wbvnItyfG0aHO0haUsedBOHQryDwv9vDAdPX6/T0a+g==}
 
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
@@ -1896,6 +1902,10 @@ snapshots:
       '@tauri-apps/cli-win32-arm64-msvc': 2.0.0-rc.17
       '@tauri-apps/cli-win32-ia32-msvc': 2.0.0-rc.17
       '@tauri-apps/cli-win32-x64-msvc': 2.0.0-rc.17
+
+  '@tauri-apps/plugin-fs@2.0.0-rc.2':
+    dependencies:
+      '@tauri-apps/api': 2.0.0-rc.6
 
   '@types/cookie@0.6.0': {}
 
