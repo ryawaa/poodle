@@ -13,7 +13,7 @@ import type {
     IYTDLPSetting,
     IYTDLPPathSetting,
     IYTDLPMultiArgSetting
-} from '../interfaces/included';
+} from '../interfaces/settings.interface';
 
 export class AppSettings implements IAppSettings {
     categories: ISettingCategory[];
