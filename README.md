@@ -1,7 +1,9 @@
 # Poodle
 
 > [!CAUTION]
-> **Current Status**: Pre-Alpha - Non-functional
+> **Current Status**: Pre-Alpha - Non-functional 
+> 
+> [See the Roadmap #1](https://github.com/rynmy/poodle/issues/1)
 
 Poodle is a free and open-source frontend and manager for [yt-dlp](https://github.com/yt-dlp/yt-dlp), built on **Tauri** and **SvelteKit**. It lets you download and manage media from a variety of sources easily.
 
