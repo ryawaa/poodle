@@ -37,7 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@tauri-apps/api": "2.0.0-rc.6",
+		"@tauri-apps/api": "2.0.2",
 		"@tauri-apps/plugin-fs": "2.0.0-rc.2"
 	}
 }
